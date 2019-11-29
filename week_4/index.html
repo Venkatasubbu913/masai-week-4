@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <h1>ABC SCHOOL Students Marks Entry Form</h1>
+        <!-- <a href="full_list.html">Full List</a> -->
+    </nav>
+    <div id="page">
+        <div id="enter">Enter Student Details Below:</div>
+        <div class="form">
+            <form action="/action_page.php" method="GET" target="_blank">
+                <select name="grade">
+                    <option value="grade">Grade</option autofocus>
+                    <option value="grade5">Grade 5</option>
+                    <option value="grade6">Grade 6</option>
+                    <option value="grade7">Grade 7</option>
+                    <option value="grade8">Grade 8</option>
+                    <option value="grade9">Grade 9</option>
+                    <option value="grade10">Grade 10</option>
+                </select>
+                <select name="section">
+                        <option value="section">Section</option>
+                        <option value="section">A</option>
+                        <option value="section">B</option>
+                        <option value="section">C</option>
+                </select>
+                <br>
+                <br>
+                <select name="examType">
+                    <option value="exam">Exam</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="halfYearly">Half-Yearly</option>
+                    <option value="semiFinal">Semi-Final</option>
+                    <option value="final">Final</option>
+                </select>
+                <!-- <input type="submit" value="Submit"> -->
+                <!-- </form>
+        </div>
+        <div class="form">
+            <form action="venkatasubbu913@gmail.com" method="post"> -->
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="student" id="name" required>
+                </div>
+                <p><b>Marks in each Subject:</b></p>
+                <fieldset>
+                    <div>
+                        <label for="eng">English:</label>
+                        <input type="number" name="student" id="eng" max="100" required>
+                    </div>
+                    <div>
+                        <label for="math">Maths:</label>
+                        <input type="number" id="math" name="student" max="100" required>
+                    </div>
+                    <div>
+                        <label for="geo">Geography:</label>
+                        <input type="number" name="student" id="geo" max="100" required>
+                    </div>
+                    <div>
+                        <label for="sci">Science:</label>
+                        <input type="number" name="student" id="sci" max="100" required>
+                    </div>
+                    <div>
+                        <label for="history">History:</label>
+                        <input type="number" name="student" id="history" max="100" required>
+                    </div>
+                </fieldset>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
