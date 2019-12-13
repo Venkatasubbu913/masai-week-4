@@ -1,0 +1,48 @@
+body {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.flexBox {
+    display: flex;
+    margin: 2% 10%;
+}
+
+.flexBox>div {
+    padding: 2px;
+    margin: 2% 8%;
+}
+
+.incomeGrid, .expGrid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-auto-rows: min-content;
+    font-size: large;
+    grid-gap: 5px;
+    color: rgb(29, 121, 7);
+}
+
+.incomeGrid>div, .expGrid>div {
+    /* background-color: rgb(228, 223, 216); */
+    padding: 2px;
+}
+
+.outputGrid {
+    display: grid;
+    border: 1px solid;
+    grid-template-columns: 50% 45%;
+    grid-auto-rows: min-content;
+    margin: 1% 25%;
+    padding: 10px;
+    font-size: large;
+    color: rgb(134, 76, 9);
+}
+
+.outputGrid>div {
+    padding: 3px
+}
+
+.outputGrid>div:nth-of-type(2n) {
+    color: rgb(124, 6, 98);
+    font-size: larger;
+}
